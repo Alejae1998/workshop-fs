@@ -1,8 +1,11 @@
 :root,
 body {
-    font-family: 'Mountains of Christmas';
     color: red;
     background-color: red;
+}
+
+header {
+    display: flex;
 }
 
 .main {
@@ -11,7 +14,7 @@ body {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    margin: 300px 300px;
+    margin: 30px 30px;
     overflow: auto;
     color: green;
 }
@@ -20,7 +23,9 @@ body {
     width: 200px;
     margin: 20px;
     color: green;
-    background-color: #b9cec2;
+    border: 1px solid green;
+    padding-left: 16px;
+    background-color: wheat;
     border-radius: 10px;
     box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
 }
@@ -39,8 +44,11 @@ li:hover {
 }
 
 #add-participant {
-    background-color: #a2bdad;
-    border: none;
+    background-color: wheat;
+    border-radius: 10px;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
     padding: 10px;
     font-size: 1.3rem;
     box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);

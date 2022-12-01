@@ -10,8 +10,8 @@ export function getUser() {
 }
 export function checkAuth() {
     const user = getUser();
-
-    if (!user) location.replace('./auth');
+    console.log(`user`, user);
+    if (!user) location.replace('/auth');
 }
 
 export async function signUpUser(email, password) {

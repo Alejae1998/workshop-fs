@@ -15,7 +15,7 @@ form.addEventListener('submit', async (e) => {
         workshop_id: formData.get('workshop_id'),
     });
     form.reset();
-    window.location.replace = '/workshops';
+    window.location.replace('/index.html');
 });
 async function onLoad() {
     const workshops = await getWorkshops();

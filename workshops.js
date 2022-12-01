@@ -1,8 +1,8 @@
 /* Imports */
-import { checkAuth, deleteParticipant, getWorkshops, signOutUser } from '../fetch-utils.js';
-import { renderWorkshop } from '../render-utils.js';
+import { checkAuth, deleteParticipant, getWorkshops, signOutUser } from './fetch-utils.js';
+import { renderWorkshop } from './render-utils.js';
 // this will check if we have a user and set signout link if it exists
-import '../auth/user.js';
+import './auth/user.js';
 
 checkAuth();
 
