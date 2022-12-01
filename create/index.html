@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- title and favicon -->
+        <title>Supabase Web App</title>
+        <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+
+        <!-- js -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
+        ></script>
+        <script type="module" src="create.js"></script>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Mountains of Christmas"
+            rel="stylesheet"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="create.css" />
+        <!-- add link for page specific css -->
+    </head>
+
+    <body>
+        <header>
+            <h1>Add a workshop</h1>
+            <nav
+                style="
+                    display: grid;
+                    align-content: stretch;
+                    justify-content: end;
+                    align-items: baseline;
+                    justify-items: start;
+                    margin-top: -300px;
+                "
+            >
+                <a href="/">See all workshops</a>
+                <a id="sign-out-link" href="auth">LogOut</a>
+            </nav>
+        </header>
+
+        <main>
+            <form id="new-participant">
+                <label for="name">name:<input type="text" name="name" /></label>
+                <label for="contact">contact:<input type="text" name="contact" /></label>
+                <select name="workshop_id" id="workshops"></select>
+            </form>
+            <button id="back">Submit workshop</button>
+        </main>
+    </body>
+</html>
