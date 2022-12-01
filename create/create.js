@@ -9,12 +9,12 @@ checkAuth();
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new FormData(form);
-    form.reset();
     await createParticipant({
         name: formData.get('name'),
         contact_info: formData.get('contact'),
         workshop_id: formData.get('workshop_id'),
     });
+    form.reset();
     window.location.replace = '/workshops';
 });
 async function onLoad() {
