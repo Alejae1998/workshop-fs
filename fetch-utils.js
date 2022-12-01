@@ -8,6 +8,11 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 export function getUser() {
     return client.auth.user();
 }
+export function checkAuth() {
+    const user = getUser();
+
+    if (!user) location.replace('./auth');
+}
 
 export async function signUpUser(email, password) {
     return await client.auth.signUp({
@@ -26,5 +31,16 @@ export async function signInUser(email, password) {
 export async function signOutUser() {
     return await client.auth.signOut();
 }
+function checkError({ data, error }) {
+    return error ? console.error(error) : data;
+}
 
 /* Data functions */
+export async function getWorkshops() {
+    const response = await client.from('workshops').select('*, participants(*)');
+    return checkError(response);
+}
+export async function deleteParticipant(id) {
+    const response = await client.from('participants').delete().eq('id', id);
+    return checkError(response);
+}

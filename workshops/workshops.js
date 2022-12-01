@@ -1,4 +1,5 @@
 /* Imports */
+import { checkAuth, signOutUser } from '../fetch-utils.js';
 // this will check if we have a user and set signout link if it exists
 import '../auth/user.js';
 
