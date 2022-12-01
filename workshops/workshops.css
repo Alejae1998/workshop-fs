@@ -3,3 +3,44 @@ body {
     font-family: 'Mountains of Christmas';
     color: red;
 }
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    margin: 300px 300px;
+    overflow: auto;
+    color: green;
+}
+
+.workshop {
+    width: 200px;
+    margin: 15px;
+    color: green;
+    background-color: #b9cec2;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+}
+li {
+    width: fit-content;
+    margin: 2px;
+    font-size: 0.9rem;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+li:hover {
+    cursor: pointer;
+    color: #739d85;
+    text-decoration: line-through;
+}
+
+#add-participant {
+    background-color: #a2bdad;
+    border: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+}
