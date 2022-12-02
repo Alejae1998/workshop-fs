@@ -1,0 +1,55 @@
+:root,
+body {
+    color: red;
+    background-color: red;
+}
+
+header {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    margin: 30px 30px;
+    overflow: auto;
+    color: green;
+}
+
+.workshop {
+    width: 200px;
+    margin: 20px;
+    color: green;
+    border: 1px solid green;
+    padding-left: 16px;
+    background-color: wheat;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+}
+li {
+    width: fit-content;
+    margin: 2px;
+    font-size: 0.9rem;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+li:hover {
+    cursor: pointer;
+    color: #739d85;
+    text-decoration: line-through;
+}
+
+#add-participant {
+    background-color: wheat;
+    border-radius: 10px;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    padding: 10px;
+    font-size: 1.3rem;
+    box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+}

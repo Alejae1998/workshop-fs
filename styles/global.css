@@ -1,3 +1,6 @@
+* {
+    font-family: 'Mountains of Christmas';
+}
 :root {
     --background: rgb(224, 234, 247);
     --header-background: white;
@@ -17,14 +20,13 @@ body {
     color: var(--text-color);
     background: var(--background);
     display: grid;
+    margin: 0;
     grid-template-rows: auto 1fr;
 }
 
 .page-header {
-    position: sticky;
     top: 0;
     padding: 15px;
-    height: 80px;
 
     display: flex;
     align-items: center;
